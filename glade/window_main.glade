@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+Copyright (C) 2018 Thomas Kummer
+licensed under the GNU General Public License v3.0 
+*/
+
+-->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <!-- interface-license-type bsd3c -->
+  <!-- interface-name LPT-Set-GTK -->
+  <!-- interface-authors Thomas Kummer -->
+  <object class="GtkWindow" id="window_main">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">LPT-Set-GTK</property>
+    <property name="default_width">522</property>
+    <property name="default_height">219</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="lbl_on_off">
+            <property name="name">lbl_hello</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">...</property>
+            <property name="use_markup">True</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">40</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_on">
+            <property name="label" translatable="yes">ON</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btn_on_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">162</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_off">
+            <property name="label" translatable="yes">OFF</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btn_off_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">253</property>
+            <property name="y">162</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chkbox_pin1">
+            <property name="label" translatable="yes">PIN 1</property>
+            <property name="width_request">53</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_chkbox_pin1_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">1</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chkbox_pin2">
+            <property name="label" translatable="yes">PIN 1</property>
+            <property name="width_request">53</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_chkbox_pin2_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">64</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chkbox_pin3">
+            <property name="label" translatable="yes">PIN 3</property>
+            <property name="width_request">53</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_chkbox_pin3_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">128</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chkbox_pin4">
+            <property name="label" translatable="yes">PIN 4</property>
+            <property name="width_request">53</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_chkbox_pin4_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">191</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chkbox_pin5">
+            <property name="label" translatable="yes">PIN 5</property>
+            <property name="width_request">53</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_chkbox_pin5_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">256</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chkbox_pin6">
+            <property name="label" translatable="yes">PIN 6</property>
+            <property name="width_request">53</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_chkbox_pin6_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">320</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chkbox_pin7">
+            <property name="label" translatable="yes">PIN 7</property>
+            <property name="width_request">53</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_chkbox_pin7_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">383</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chkbox_pin8">
+            <property name="label" translatable="yes">PIN 8</property>
+            <property name="width_request">53</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_chkbox_pin8_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">443</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
