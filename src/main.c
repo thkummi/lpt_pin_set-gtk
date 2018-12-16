@@ -1,4 +1,7 @@
-
+/*
+Copyright (C) 2018 Thomas Kummer
+licensed under the GNU General Public License v3.0 
+*/
 
 #include <gtk/gtk.h>
 #include <sys/io.h>
