@@ -4,7 +4,9 @@ GTK programm so set LPT Pins high or low
 #To compile install (debian and derivates)
 #
 apt-get install build-essential libgtk-3-dev
+#
 make
+#
 #and execute with root privileges
 ./lpt_pin_set-gtk
 #
